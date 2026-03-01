@@ -1,0 +1,14 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景圆角矩形 -->
+  <rect width="32" height="32" rx="8" fill="#2563eb"/>
+  
+  <!-- 工具箱/方格几何图形 -->
+  <path d="M9 9H14V14H9V9Z" fill="white"/>
+  <path d="M18 9H23V14H18V9Z" fill="white" fill-opacity="0.6"/>
+  <path d="M9 18H14V23H9V18Z" fill="white" fill-opacity="0.6"/>
+  <path d="M18 18H23V23H18V18Z" fill="white"/>
+  
+  <!-- 装饰线条 -->
+  <rect x="15.5" y="9" width="1" height="14" fill="white" fill-opacity="0.2"/>
+  <rect x="9" y="15.5" width="14" height="1" fill="white" fill-opacity="0.2"/>
+</svg>
