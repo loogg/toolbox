@@ -1,0 +1,44 @@
+{
+  "site": {
+    "logoText": "DevBox",
+    "logoHighlight": "Workspace",
+    "navLinks": [
+      {
+        "label": "文档说明",
+        "url": "#"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/loogg"
+      }
+    ],
+    "hero": {
+      "title": "你的专属效率工具箱",
+      "subtitle": "随时随地，开箱即用。为你提供最纯粹的本地计算与处理工具，无需将数据上传至云端。"
+    },
+    "footer": {
+      "copyright": "© 2026 DevBox Workspace. Designed by 马龙伟. All rights reserved.",
+      "links": [
+        {
+          "label": "隐私政策",
+          "url": "#"
+        },
+        {
+          "label": "服务条款",
+          "url": "#"
+        }
+      ]
+    }
+  },
+  "tools": [
+    {
+      "id": "protocol-architect",
+      "name": "协议蓝图标注",
+      "desc": "可视化定义数据包结构，自动计算字节偏移量，生成专业级的协议文档拓扑图。",
+      "category": "效率",
+      "icon": "Columns3",
+      "url": "https://loogg.github.io/tool-data-struct/",
+      "color": "bg-indigo-600"
+    }
+  ]
+}
