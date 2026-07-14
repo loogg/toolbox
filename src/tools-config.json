@@ -48,6 +48,15 @@
       "icon": "Calculator",
       "url": "https://loogg.github.io/tool-crc-algorithm-lab/",
       "color": "bg-blue-600"
+    },
+    {
+      "id": "cache-mpu-lab",
+      "name": "Cache & MPU 交互实验室",
+      "desc": "逐步观察 Cache、MPU、DMA 一致性与 GD32H75E 内存配置，动态验证 Region、SRD、TEX/C/B 和 Clean/Invalidate。",
+      "category": "开发",
+      "icon": "Cpu",
+      "url": "https://loogg.github.io/tool-cache-mpu-lab/",
+      "color": "bg-violet-600"
     }
   ]
 }
