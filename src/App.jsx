@@ -15,11 +15,12 @@ import {
   LayoutGrid,
   Cpu,
   Type,
-  Columns3
+  Columns3,
+  Waves
 } from 'lucide-react';
 
 const IconMap = {
-  Code, ImageIcon, Search, Palette, Shield, Clock, Calculator, Terminal, FileText, Compass, LayoutGrid, Cpu, Type, Columns3
+  Code, ImageIcon, Search, Palette, Shield, Clock, Calculator, Terminal, FileText, Compass, LayoutGrid, Cpu, Type, Columns3, Waves
 };
 
 export default function App() {

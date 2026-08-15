@@ -32,6 +32,15 @@
   },
   "tools": [
     {
+      "id": "low-pass-filter-lab",
+      "name": "一阶低通滤波实验室",
+      "desc": "交互理解 τ、fc、α、Nyquist 与混叠，模拟信号采样和数字滤波，并按工程约束反推参数与生成 MCU 代码。",
+      "category": "开发",
+      "icon": "Waves",
+      "url": "https://loogg.github.io/tool-low-pass-filter-lab/",
+      "color": "bg-teal-600"
+    },
+    {
       "id": "protocol-architect",
       "name": "协议蓝图标注",
       "desc": "可视化定义数据包结构，自动计算字节偏移量，生成专业级的协议文档拓扑图。",
