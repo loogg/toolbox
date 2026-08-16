@@ -66,6 +66,15 @@
       "icon": "Cpu",
       "url": "https://loogg.github.io/tool-cache-mpu-lab/",
       "color": "bg-violet-600"
+    },
+    {
+      "id": "keil-lab",
+      "name": "Keil 交互实验室",
+      "desc": "交互式学习 Keil/Arm 工具链：scatter 内存布局可视化、AC5/AC6 预定义宏探测、packed/aligned 字节实验，以及 errno 与 printf 重定向链路。",
+      "category": "开发",
+      "icon": "Terminal",
+      "url": "https://loogg.github.io/tool-keil-lab/",
+      "color": "bg-cyan-600"
     }
   ]
 }
