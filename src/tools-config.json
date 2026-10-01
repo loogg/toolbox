@@ -32,6 +32,15 @@
   },
   "tools": [
     {
+      "id": "sd-endurance",
+      "name": "SD 卡耐久分析",
+      "desc": "计算主机写入预算、NAND P/E 工程估算与目标年限选型需求，查看真实型号来源、写入投影和敏感性分析。",
+      "category": "开发",
+      "icon": "Calculator",
+      "url": "https://loogg.github.io/tool-sd-endurance/",
+      "color": "bg-blue-600"
+    },
+    {
       "id": "low-pass-filter-lab",
       "name": "一阶低通滤波实验室",
       "desc": "交互理解 τ、fc、α、Nyquist 与混叠，模拟信号采样和数字滤波，并按工程约束反推参数与生成 MCU 代码。",
