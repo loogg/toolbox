@@ -32,6 +32,39 @@
   },
   "tools": [
     {
+      "id": "vofa-protocol-workbench",
+      "name": "VOFA+ 协议工作台",
+      "desc": "可视化编排协议字段、值校验与 CRC，测试采样数据并生成、构建 VOFA+ 数据引擎插件。",
+      "category": "开发",
+      "platform": "desktop",
+      "icon": "Columns3",
+      "iconImage": "tool-icons/vofa.png",
+      "url": "https://github.com/loogg/vofa-justfloat-engine-config",
+      "color": "bg-slate-50"
+    },
+    {
+      "id": "modbus-debugger",
+      "name": "Modbus 调试器",
+      "desc": "支持 Modbus RTU/TCP 从站扫描、寄存器读写、实时趋势、数据记录与历史回放。",
+      "category": "开发",
+      "platform": "desktop",
+      "icon": "Terminal",
+      "iconImage": "tool-icons/modbus.png",
+      "url": "https://github.com/loogg/modbus-debugger",
+      "color": "bg-slate-50"
+    },
+    {
+      "id": "md2word",
+      "name": "MD2Word 文档生成器",
+      "desc": "按 DOCX 模板和 CSS 将 Markdown 转为 Word 文档，支持模板管理与本地文档生成。",
+      "category": "效率",
+      "platform": "desktop",
+      "icon": "FileText",
+      "iconImage": "tool-icons/md2word.svg",
+      "url": "https://github.com/loogg/md2word",
+      "color": "bg-slate-50"
+    },
+    {
       "id": "ethercat-image",
       "name": "EtherCAT SSC 图标转换",
       "desc": "将图片与 ICO 转换为 16×14 像素、16 色 BMP，生成 SSC HEX 或 ESI XML，支持像素预览与反向解码。",

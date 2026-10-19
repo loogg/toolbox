@@ -17,7 +17,9 @@ import {
   Cpu,
   Type,
   Columns3,
-  Waves
+  Waves,
+  Monitor,
+  ExternalLink
 } from 'lucide-react';
 
 const IconMap = {
@@ -34,9 +36,10 @@ export default function App() {
   }, []);
 
   const filteredTools = useMemo(() => {
+    const query = searchQuery.trim().toLowerCase();
     return siteConfig.tools.filter(tool => {
-      const matchesSearch = tool.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                            tool.desc.toLowerCase().includes(searchQuery.toLowerCase());
+      const matchesSearch = [tool.name, tool.desc, tool.platform === 'desktop' ? '桌面端 desktop GitHub' : '']
+        .some(value => value.toLowerCase().includes(query));
       const matchesCategory = activeCategory === '全部' || tool.category === activeCategory;
       return matchesSearch && matchesCategory;
     });
@@ -140,11 +143,20 @@ export default function App() {
                   <div className="relative z-10">
                     <div className="flex items-center justify-between mb-5">
                       <div className={`flex h-12 w-12 items-center justify-center rounded-xl text-white shadow-sm ${tool.color} group-hover:scale-110 transition-transform duration-300`}>
-                        <IconComponent size={24} strokeWidth={1.5} />
+                        {tool.iconImage ? (
+                          <img src={`${import.meta.env.BASE_URL}${tool.iconImage}`} alt="" width={48} height={48} className="h-12 w-12 rounded-xl object-contain" />
+                        ) : (
+                          <IconComponent size={24} strokeWidth={1.5} />
+                        )}
                       </div>
-                      <span className="inline-flex items-center rounded-full bg-slate-50 px-2.5 py-0.5 text-xs font-medium text-slate-500 border border-slate-100">
-                        {tool.category}
-                      </span>
+                      <div className="flex flex-col items-end gap-1.5">
+                        <span className="inline-flex items-center rounded-full bg-slate-50 px-2.5 py-0.5 text-xs font-medium text-slate-500 border border-slate-100">
+                          {tool.category}
+                        </span>
+                        {tool.platform === 'desktop' ? (
+                          <span className="inline-flex items-center gap-1 text-xs text-slate-500"><Monitor size={12} />桌面端</span>
+                        ) : null}
+                      </div>
                     </div>
 
                     <h3 className="text-lg font-semibold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">
@@ -157,8 +169,12 @@ export default function App() {
                   </div>
 
                   <div className="mt-auto relative z-10 flex items-center text-sm font-medium text-slate-400 group-hover:text-blue-600 transition-colors">
-                    立即使用
-                    <ArrowRight size={16} className="ml-1 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" />
+                    {tool.platform === 'desktop' ? '查看 GitHub' : '立即使用'}
+                    {tool.platform === 'desktop' ? (
+                      <ExternalLink size={14} className="ml-1.5" />
+                    ) : (
+                      <ArrowRight size={16} className="ml-1 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" />
+                    )}
                   </div>
                 </a>
               );
