@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import siteConfig from './tools-config.json'
+import EthercatImage from './icons/EthercatImage.jsx'
 import {
   Search,
   Code,
@@ -20,7 +21,7 @@ import {
 } from 'lucide-react';
 
 const IconMap = {
-  Code, ImageIcon, Search, Palette, Shield, Clock, Calculator, Terminal, FileText, Compass, LayoutGrid, Cpu, Type, Columns3, Waves
+  Code, ImageIcon, Search, Palette, Shield, Clock, Calculator, Terminal, FileText, Compass, LayoutGrid, Cpu, Type, Columns3, Waves, EthercatImage
 };
 
 export default function App() {

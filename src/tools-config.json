@@ -32,6 +32,15 @@
   },
   "tools": [
     {
+      "id": "ethercat-image",
+      "name": "EtherCAT SSC 图标转换",
+      "desc": "将图片与 ICO 转换为 16×14 像素、16 色 BMP，生成 SSC HEX 或 ESI XML，支持像素预览与反向解码。",
+      "category": "开发",
+      "icon": "EthercatImage",
+      "url": "https://loogg.github.io/tool-ethercat-image/",
+      "color": "bg-blue-600"
+    },
+    {
       "id": "sd-endurance",
       "name": "SD 卡耐久分析",
       "desc": "计算主机写入预算、NAND P/E 工程估算与目标年限选型需求，查看真实型号来源、写入投影和敏感性分析。",
