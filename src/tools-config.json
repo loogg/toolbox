@@ -65,6 +65,16 @@
       "color": "bg-slate-50"
     },
     {
+      "id": "ethercat-config",
+      "name": "EtherCAT 配置查阅",
+      "desc": "查阅 SSC Tool、应用对象字典和 ESI XML 配置，结合关联图、时序演示与计算器理解配置关系。",
+      "category": "开发",
+      "icon": "FileText",
+      "iconImage": "tool-icons/ethercat-config.svg",
+      "url": "https://loogg.github.io/tool-ethercat-config/",
+      "color": "bg-blue-600"
+    },
+    {
       "id": "ethercat-image",
       "name": "EtherCAT SSC 图标转换",
       "desc": "将图片与 ICO 转换为 16×14 像素、16 色 BMP，生成 SSC HEX 或 ESI XML，支持像素预览与反向解码。",
