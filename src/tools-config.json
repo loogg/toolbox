@@ -66,7 +66,7 @@
     },
     {
       "id": "ethercat-config",
-      "name": "EtherCAT 配置查阅",
+      "name": "EtherCAT 配置查阅工具",
       "desc": "查阅 SSC Tool、应用对象字典和 ESI XML 配置，结合关联图、时序演示与计算器理解配置关系。",
       "category": "开发",
       "icon": "FileText",
